@@ -6,7 +6,7 @@ import authConfig from '../config/auth';
 interface TokenPayload {
   iat: number;
   exp: number;
-  iat: string;
+  sub: string;
 }
 
 export default function ensureAuthenticated(
