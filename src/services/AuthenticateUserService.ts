@@ -16,7 +16,6 @@ interface Response {
 }
 
 class AuthenticateUserService {
-  // eslint-disable-next-line class-methods-use-this
   public async execute({ email, password }: Request): Promise<Response> {
     const usersRepository = getRepository(User);
 
